@@ -1,0 +1,42 @@
+body {
+background-color: #9100DC;
+background-image: url("images/parchment.webp");
+}
+
+#wrapper{
+  background-color: #AADB00;  
+  width: 70%;
+  margin: 0px auto;
+}
+
+header, nav, main, footer {
+
+    padding: 20px;
+    border: 1px solid #2F3322;
+}
+
+main h2{
+background-color: #4D2E5C;
+padding: 6px;
+border-bottom: 10px solid #9100DC;
+color: #AADB00;
+
+margin: 60px 0px 0px 0px;
+}
+
+div.imageContainer {
+    background-color: #fff;
+    padding: 20px;
+    border: 11px solid #75279C;
+
+}
+
+div.imageContainer img{
+    width: 400px;
+    height: 400px;
+    border: 25px solid #9100DC ;
+    margin: 10px;
+    padding: 20px;
+    background-color:#AADB00;
+
+}
