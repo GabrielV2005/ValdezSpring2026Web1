@@ -1,0 +1,110 @@
+html body.presentation-mode #preview-controls-panel {
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 16px;
+    width: 100px;
+}
+html body.presentation-mode #preview-controls-panel.force-visible {
+    opacity: 1;
+}
+html body.presentation-mode #preview-controls-panel:hover {
+    opacity: 1;
+}
+html body.presentation-mode #preview-controls-panel .nav,
+html body.presentation-mode #preview-controls-panel .options {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    font-size: 0;
+    padding-right: 16px;
+}
+html body.presentation-mode #preview-controls-panel .nav {
+    bottom: 0;
+    padding-bottom: 16px;
+}
+html body.presentation-mode #preview-controls-panel .options {
+    top: 0;
+    padding-top: 16px;
+}
+html body.presentation-mode #preview-controls-panel .prevSectionButton,
+html body.presentation-mode #preview-controls-panel .nextSectionButton,
+html body.presentation-mode #preview-controls-panel .fullscreenButton {
+    display: inline-block;
+}
+html body.presentation-mode #preview-controls-panel .prevSectionButton {
+    background-image: url(/static/gneiss/images/preview_chevronUp.png);
+}
+html body.presentation-mode #preview-controls-panel .nextSectionButton {
+    background-image: url(/static/gneiss/images/preview_chevronDown.png);
+}
+html body.presentation-mode #preview-controls-panel .fullscreenButton {
+    background-image: url(/static/gneiss/images/SX_FullscreenExpand_18_N-white.svg);
+}
+html body.presentation-mode #preview-controls-panel .fullscreenButton.exit {
+    background-image: url(/static/gneiss/images/SX_FullscreenExit_18_N-white.svg);
+}
+
+#preview-controls-panel .prevSectionButton,
+#preview-controls-panel .nextSectionButton,
+#preview-controls-panel .fullscreenButton {
+    display: none;
+}
+
+#preview-controls-panel {
+    position: fixed;
+    top: 16px;
+    right: 32px;
+    width: auto;
+    height: auto;
+    transition: opacity 0.5s ease-out;
+    z-index: 9;
+}
+#preview-controls-panel button {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    margin-left: 4px;
+    border: none;
+    border-radius: 36px;
+    padding: 0;
+    height: 36px;
+    width: 36px;
+    top: auto;
+    right: auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: background-color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
+}
+#preview-controls-panel button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#preview-controls-panel button:active {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#preview-controls-panel .previewCloseButton {
+    background-image: url(/static/gneiss/images/SX_Close_18_N-white.svg);
+}
+
+.embedded-link-viewer-visible .previewCloseButton {
+    display: none;
+}
+
+/* Embedded Link Placeholder */
+.embedded-link-wrapper iframe {
+    position: relative;
+    background-color: #e8e8e8;
+    background-image: url(/static/gneiss/assets/styles/icons/embedded-link-placeholder.png);
+    background-size: 10%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
