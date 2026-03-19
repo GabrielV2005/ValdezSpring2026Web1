@@ -1,4 +1,54 @@
-<<<<<<< HEAD
+
+body{
+background-color: #dcf2d5;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+background-color: #4d7341;
+width: 70%;
+margin: 0px auto;
+}
+
+h3, h4, h5{
+margin: 0px;
+}
+
+h1 {
+color: #a2dba6;
+font-family: "Bytesized", sans-serif; 
+}
+header h2 {
+
+color: #7ecc84;
+font-family: "Jacquard 24", system-ui;
+}
+
+main h2{
+color: #6d9c5f;
+}
+
+main h3{
+margin-top: 30px; 
+font-family: "Story Script", sans-serif;
+}
+
+main a{
+color: #fff;
+text-decoration: none;
+}
+
+main a:hover{
+color: #f00;
+}
+
+span.copyright {
+color: #c8c8c8
+}
+span.author{
+    color: #fff
+}
+
 
 body{
 background-color: #dcf2d5;
@@ -48,55 +98,4 @@ color: #c8c8c8
 }
 span.author{
 color: #fff
-=======
-
-body{
-background-color: #dcf2d5;
-font-family: Arial, Helvetica, sans-serif;
-}
-
-#wrapper {
-background-color: #4d7341;
-width: 70%;
-margin: 0px auto;
-}
-
-h3, h4, h5{
-margin: 0px;
-}
-
-h1 {
-color: #a2dba6;
-font-family: "Bytesized", sans-serif; 
-}
-header h2 {
-
-color: #7ecc84;
-font-family: "Jacquard 24", system-ui;
-}
-
-main h2{
-color: #6d9c5f;
-}
-
-main h3{
-margin-top: 30px; 
-font-family: "Story Script", sans-serif;
-}
-
-main a{
-color: #fff;
-text-decoration: none;
-}
-
-main a:hover{
-color: #f00;
-}
-
-span.copyright {
-color: #c8c8c8
-}
-span.author{
-color: #fff
->>>>>>> ac5f892cbfe273b9e06564174b0b5d7b172f3426
 }
