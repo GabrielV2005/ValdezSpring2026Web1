@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Instrument Serif", serif;
+    background-image: url(images/colorful.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+}
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper{
+    background: rgb(242, 216, 86);
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 80%;
+    margin: 0 auto;
+}
+.wrapper>*{
+    padding: 20px;
+}
+header {
+    background-color: rgb(184, 115, 30);
+    grid-column: 1/13;
+}
+
+nav {
+    background-color: rgb(231, 72, 19);
+    grid-column: 1/4;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+nav a:hover{
+    color:#FA0101
+
+}
+main {
+    background-color: rgb(211, 90, 227);
+    grid-column: 4/10;
+}
+main a{
+color: #fff;
+text-decoration: none;
+}
+
+main a:hover{
+color: #FA0101;
+}
+
+aside {
+    background-color: rgb(232, 72, 101);
+    grid-column: 10/13;
+}
+main,
+nav,
+aside{
+    grid-row: 2/4;
+}
+
+footer {
+    background-color: rgb(61, 139, 213);
+    grid-column: 1/13;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+

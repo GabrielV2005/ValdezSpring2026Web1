@@ -1,0 +1,43 @@
+.flicker-img {
+    width: 250px;
+    animation-name: flicker;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(0 0 10px #ffd700);
+}
+
+
+
+@keyframes flicker { 
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    
+    20%, 24%, 55% {
+        opacity: 0;
+        transform: translate(2px, -2px)
+    }
+}
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  
+
+}

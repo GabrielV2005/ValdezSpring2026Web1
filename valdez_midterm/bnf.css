@@ -1,0 +1,38 @@
+.bnf-img{
+    width: 200px;
+    animation-name: swing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes swing{
+    from{
+        transform: translateX(-100px)
+    }
+    to{
+        transform: translateX(100px);
+    }
+}
+
+body {
+  margin: 0;
+  background: #c248e4;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  
+
+}
