@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery and AJAX</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1>AJAX and jQuery</h1>
+    <div id="content">
+
+        <p>jQuery simplifies working with AJAX. jQuery provides high-level wrapper
+            functions
+            for retrieving data, working with different data types, handling errors, and monitoring the AJAX request
+            process.</p>
+        <ul>
+            <li><code>ajax()</code>: used to perform generic AJAX requests</li>
+            <li><code>load()</code>: loads AJAX content directly into a page element</li>
+        </ul>
+
+        <button id="shortBioButton">Short Bio</button>
+        <button id="longBioButton">Long Bio</button>
+
+        <div id="bioContainer">
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("#shortBioButton").on("click", loadShortBio);
+            $("#longBioButton").on("click", loadLongBio);
+        });
+
+        function loadShortBio() {
+            $("#bioContainer").load("short-bio.html");
+        }
+        function loadLongBio() {
+            $("#bioContainer").load("long-bio.html");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Element Fading</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style type="text/css">
+        p, span {
+            font-size: 16pt;
+        }
+        
+        button {
+            margin: 5pt 5pt 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Element Fading Routines</h1>
+    <div id="content">
+
+        <p>Page elements can be faded in or out using a set of dedicated jQuery functions.</p>
+        <ul>
+            <li><code>fadeIn()</code> fades the element in from being invisible</li>
+            <li><code>fadeOut()</code> fades the element out and removes it from layout</li>
+            <li><code>fadeTo()</code> fades the element to a specified opacity</li>
+        </ul>
+
+        <button id="fadein">Fade In</button>
+        <button id="fadeout">Fade Out</button>
+        <button id="fadeto3">Fade To 30%</button>
+        <button id="fadeup">Fade To 100%</button>
+        <button id="pulse">Pulsate</button>
+
+        <div id="theDiv" class="box">
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            // Fade the element in
+            $("#fadein").on("click", function() {
+                $("#theDiv").fadeIn("normal");
+            });
+
+            // Fade an element out
+            $("#fadeout").on("click", function() {
+                $("#theDiv").fadeOut("normal");
+            });
+
+            // Fade an element to a particular opacity
+            $("#fadeto3").on("click", function() {
+                $("#theDiv").fadeTo("slow", 0.3);
+            });
+
+            // Use a completion function
+            $("#fadeup").on("click", function() {
+                $("#theDiv").fadeTo("slow", 1.0, onComplete);
+            });
+
+            // Use multiple fade effects
+            $("#pulse").on("click", function() {
+                $("#theDiv").fadeTo("fast", 0.3)
+                            .fadeTo("fast", 1.0)
+                            .fadeTo("fast", 0.3)
+                            .fadeTo("fast", 1.0);
+            });
+        });
+        
+        function onComplete() {
+            $(this).text("Fading effect complete");
+        }
+    </script>
+
+</body>
+
+</html>

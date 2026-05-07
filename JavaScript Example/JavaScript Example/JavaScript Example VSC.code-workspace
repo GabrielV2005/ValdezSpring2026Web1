@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"name": "session02",
+			"path": "../../session08/session02"
+		},
+		{
+			"name": "session03",
+			"path": "../../session08/session03"
+		},
+		{
+			"name": "session04",
+			"path": "../../session08/session04"
+		},
+		{
+			"name": "session05",
+			"path": "../../session08/session05"
+		},
+		{
+			"name": "session06",
+			"path": "../../session08/session06"
+		},
+		{
+			"name": "session07",
+			"path": "../../session08/session07"
+		},
+		{
+			"name": "session08",
+			"path": "../../session08"
+		},
+		{
+			"path": "../../valdez_midterm"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "valdez_midterm"
+	}
+}

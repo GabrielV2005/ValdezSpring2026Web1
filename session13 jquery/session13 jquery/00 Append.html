@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First jQuery-Enabled Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1>jQuery Example: Inserting Content on document load using "append" method.</h1>
+    <div id="content">
+        <!-- jQuery will append this content -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        // jQuery Example: Inserting Content on document load using "append" method
+        $("document").ready(function () {
+            $("#content").append("<p>This content is inserted inside the #content div using jQuery library.</p>");
+        });
+    </script>
+
+</body>
+
+</html>
