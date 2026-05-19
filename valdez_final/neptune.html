@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Popular Planets</title>
+
+        <link rel="stylesheet" href="styles.css">
+
+        
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js"></script>
+        </head>
+      
+        
+        
+        <body>
+
+            <header>
+                <h1>Most Popular Planets in our Solar System</h1>
+
+
+                <nav>
+                    <a href="index.html">Earth</a>
+                    <a href="mars.html">Mars</a>
+                    <a href="jupiter.html">Jupiter</a>
+                    <a href="saturn.html">Saturn</a>
+                    <a href="neptune.html">Neptune</a>
+                </nav>
+            </header>
+
+            <main>
+            <section class = "hero">
+            <div>
+                        <h2>Neptune: The Ice Giant</h2>
+                        <p>Neptune is the farthest planet from the Sun in our solar system.</p>
+            
+
+
+            <button id="neptuneBtn">Show Neptune Fact</button>
+            <p id="neptuneFact"> Neptune orbits the sun at and average distance of 2.8 billion miles. </p>
+            </div>
+            </section>
+
+            <img src="images/neptune2.jpg" alt="Neptune" class="planet-image rotate-planet">
+        </section>
+
+        <section>
+            <h2 class="section-title">Neptune Fun Facts</h2>
+
+            <div class="fact-grid">
+            <article class="card">
+                <h3>Discovery</h3>
+                <p>Neptune was discovered September 23, 1846, by Johann Galle and Heinrich d'Arrest.</p>
+            </article>
+
+            <article class="card">
+                <h3>Invisibility</h3>
+                <p>Neptune is invisible to the naked eye due to its great distance from Earth.</p>
+            </article>
+
+            <article class="card">
+                <h3>Twins</h3>
+                <p>Neptune and Uranus are often refered to as "twin planets" due to their similar size and composition.</p>
+            </article>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Explore Other Planets</h2>
+
+            <div class="planet-links">
+            <a href="mars.html" class="planet-card">Mars</a>
+            <a href="neptune.html" class="planet-card">Neptune</a>
+            <a href="jupiter.html" class="planet-card">Jupiter</a>
+            <a href="saturn.html" class="planet-card">Saturn</a>
+            </div>
+        </section>
+
+        </main>
+         <script>
+        $(document).ready(function(){
+
+        $("#neptuneFact").hide();
+
+        $("#neptuneBtn").click(function(){
+            $("#neptuneFact").slideToggle();
+        });
+
+        });
+        </script>
+        </body>
+        </html>

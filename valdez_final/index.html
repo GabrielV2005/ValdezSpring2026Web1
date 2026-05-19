@@ -1,0 +1,109 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Planets</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+
+</head>
+    
+    <body>
+
+        <header>
+            <h1>Most Popular Planets in our Solar System</h1>
+
+
+            <nav>
+                <a href="index.html">Earth</a>
+                <a href="mars.html">Mars</a>
+                <a href="jupiter.html">Jupiter</a>
+                <a href="saturn.html">Saturn</a>
+                <a href="neptune.html">Neptune</a>
+            </nav>
+        </header>
+
+        <main>
+        <section class = "hero">
+        <div>
+                    <h2>Earth: Home of Humanity</h2>
+                    <p>Earth is the only known planet the supports life. Explore our solar system and learn something new.</p>
+        
+
+        
+        <button id="earthBtn">Show Earth Fact</button>
+        <p id="earthFact"> Earth is about 4.54 billion years old. </p>
+        </div>
+        </section>
+
+        <img src="images/earth.jpg" alt="Earth" class="planet-image rotate-planet">
+    </section>
+
+    <section>
+        <h2 class="section-title">Earth Fun Facts</h2>
+
+        <div class="fact-grid">
+        <article class="card">
+            <h3>Water</h3>
+            <p>Earth is the only planet where water exists in all three states of matter.</p>
+        </article>
+
+        <article class="card">
+            <h3>Atmosphere</h3>
+            <p>Earths thick atmosphere protects life on the planet from harmful solar radiation.</p>
+        </article>
+
+        <article class="card">
+            <h3>Spin</h3>
+            <p>Earth spins at roughly 1000 miles per hour at the equator and orbits the sun at 107,182 km/h</p>
+        </article>
+        </div>
+    </section>
+    
+    <section>
+
+        <h2 class="section-title">Explore Other Planets</h2>
+
+        <div class="planet-links">
+        <a href="mars.html" class="planet-card">Mars</a>
+        <a href="neptune.html" class="planet-card">Neptune</a>
+        <a href="jupiter.html" class="planet-card">Jupiter</a>
+        <a href="saturn.html" class="planet-card">Saturn</a>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Solar System Simulation</h2>
+    </section>
+
+    
+
+    </main>
+    
+    <footer> <p> &copy; Gabriel Valdez</p></footer>
+
+    <script>
+    $(document).ready(function(){
+
+    $("#earthFact").hide();
+
+    $("#earthBtn").click(function(){
+        $("#earthFact").slideToggle();
+    });
+
+    });
+    </script>
+    
+    </body>
+    </html>
